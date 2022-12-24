@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <title>George.com</title>
+  <head>
+    <!-- External stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/rippleui/dist/css/styles.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Internal stylesheet -->
+    <link rel="stylesheet" href="GEORGE_main.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <div class="navbar-start">
+        <a id=home_george_pic class="navbar-item" href="C:\Users\josha\OneDrive\Desktop\GEORGES WEBSITE\GEORGE_main.html"> <img src="C:\Users\josha\OneDrive\Desktop\GEORGES WEBSITE\PICS\George.png">  </a>
+
+        <!-- Stats modal and table -->
+        <div class="container" id="Hello_Pooch_Button">
+          <label class="btn btn-primary" for="modal3">STATS</label>
+          <input class="modal-state" id="modal3" type="checkbox" />
+          <div class="modal">
+            <label class="modal-overlay" for="modal3"></label>
+            <div class="modal-content flex flex-col gap-5">
+              <label class="modal-close" for="modal3"></label>
+              <h2 class="text-xl">GEORGES STATS <img src="C:\Users\josha\OneDrive\Desktop\GEORGES WEBSITE\PICS\george_head.png" id=george_stat_pic ></h2>
+              <div class="flex w-full overflow-x-auto " id="stat">
+                <table class="table-hover table">
+                  <thead>
+                    <tr></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>BREED</th>
+                      <td>JACK RUSSEL TERRIER</td>
+                    </tr>
+                    <tr>
+                      <th>AGE</th>
+                      <td>8 YEARS OLD (11/8/2014)</td>
+                    </tr>
+                    <tr>
+                      <th>WEIGHT</th>
+                      <td>~ 20LBS</td>
+                    </tr>
+                    <tr>
+                      <th>FAVORITE TOY</th>
+                      <td>DUCK</td>
+                    </tr>
+                    <tr>
+                      <th>FAVORITE HUMAN</th>
+                      <td>BECKIE ELLMAN</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <!-- Navigation links -->
+        <a class="navbar-item" href="C:\Users\josha\OneDrive\Desktop\GEORGES WEBSITE\GEORGE_main.html">Home</a>
+        <a class="navbar-item" href="C:\Users\josha\OneDrive\Desktop\GEORGES WEBSITE\GEOREG_about.html">About</a>
+        <a class="navbar-item" href="https://www.example.com/contact">Contact</a>
+      </div>
+    </div>
+  
+    <!-- Trivia Game -->
+        <style>
+          form {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+          }
+    
+          input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+    
+          button[type="submit"] {
+            width: 100%;
+            background-color: grey;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+    
+          button[type="submit"]:hover {
+            background-color: rgb(51, 51, 250);
+          }
+          form {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+
+          
+
+
+        </style>
+      </head>
+      <body>
+        <form id="trivia-form">
+          <h2>Pooch Trivia</h2>
+          <p>What is George's favorite toy?</p>
+          <input type="text" name="question1" />
+          <p>Who is George's favorite human?</p>
+          <input type="text" name="question2" />
+          <p>Is George a good boy?</p>
+          <input type="text" name="question3" />
+          <button type="submit">Submit</button>
+    </form>
+    <script>
+    const form = document.querySelector('#trivia-form');
+    
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const question1 = this.elements['question1'].value;
+        const question2 = this.elements['question2'].value;
+        const question3 = this.elements['question3'].value;
+        if (question1 === 'Duck' && question2 === 'Beckie Ellman' && question3 === 'YES!!!') {
+          alert('You win!');
+        } else {
+          alert('Wrong answers, try again.');
+        }
+      });
+    </script>
+    

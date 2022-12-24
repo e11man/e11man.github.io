@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pooch Trivia</title>
+    <style>
+      form {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="trivia-form">
+      <h2>Pooch Trivia</h2>
+      <p>What is George's favorite toy?</p>
+      <input type="text" name="question1" />
+      <p>Who is George's favorite human?</p>
+      <input type="text" name="question2" />
+      <p>Is George a good boy?</p>
+      <input type="text" name="question3" />
+      <button type="submit">Submit</button>
+</form>
+<script>
+const form = document.querySelector('#trivia-form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const question1 = this.elements['question1'].value;
+    const question2 = this.elements['question2'].value;
+    const question3 = this.elements['question3'].value;
+    if (question1 === 'Duck' && question2 === 'Beckie Ellman' && question3 === 'Yes') {
+      alert('You win!');
+    } else {
+      alert('Wrong answers, try again.');
+    }
+  });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+#right-button {
+    float: right;
+  }
+h1 {
+text-align: center;
+font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+font-weight: bold;
+
+}
+
+#george_nav_pic {
+    width: 10%;
+    height: 10%;
+  }
+
+  .modal-container {
+    display: flex;
+    flex-wrap: nowrap; /* Add this line */
+  }
+  
+  .card {
+    margin: 15px 20px 20px 20px;
+  }
+
+#DALLE {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+#DALLE_pic {
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+  }
+#stat {
+    width: 50%; /* or any other value */
+    margin: 0 auto;
+
+  }
+
+#home_george_pic {
+    width: 16%;
+    height: 16%;
+    margin: 0 auto;
+  }
+  
+
+#george_stat_pic {
+width: 20%;
+height: 20%;
+margin: 0 auto;
+}
+  
